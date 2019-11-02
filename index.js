@@ -398,7 +398,7 @@ try {
       message.reply("Usage: !verify");
       return;
     }
-    let role = message.guild.roles.find(r => r.name == "Verified")
+    let role = message.guild.roles.find(r => r.name == "members")
 
     if(message.member.roles.has(role.id)) return message.channel.send(`***${message.author.username}** You are Already Verified*`)
   
